@@ -19,6 +19,8 @@ modules:
     path: db
     requires:
       - name: hdi_db
+        properties:
+          TARGET_CONTAINER: '~{hdi-container-name}'
   - name: core_xsjs
     type: nodejs
     path: core_xsjs
